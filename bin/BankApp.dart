@@ -1,5 +1,5 @@
 void main(List<String> args) {
-  bankClient b = bankClient(id: 111, name: "Rakan", balance: 2000.9);
+  bankClient b = bankClient(name: "Rakan");
   print("the name is ${b.getName} and the balance is ${b.balance}");
   b.deposit(10000);
   b.withdraw(4859.54);
@@ -9,11 +9,15 @@ void main(List<String> args) {
 
 // task:5
 class bankClient {
-  int id = 1;
-  late final String? name;
+  static int ids = 1;
+  late int id;
+  final String name;
   double balance = 0;
 
-  bankClient({required this.id, required this.name, required this.balance});
+  bankClient({required this.name}) {
+    id = ids++;
+    balance = 0;
+  }
   // task:6
   String? get getName => name;
   double get getBalance => balance;

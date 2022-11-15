@@ -28,11 +28,11 @@
 
 11.When `shieldStrength` is 0, all `wasHit()` does is decrement health by 5. That's exactly what the implementation of `wasHit()` on Spaceship does! Instead of rewriting that, you can call through to the superclass implementation of `wasHit()`. Go back to your implementation of `wasHit()` on `ShieldedShip` and remove the code where you decrement health by 5 and replace it with a call to the superclass's implementation of the function. Call `wasHit()` on defender, then print `shieldStrength` and `health`.
 
-### Banck App
+### Bank App
 
-12.Create a `banckClient` class with three variable properties: `id`, `name`, and `balance`. The value of `id` should be an automatically (the id should repesents the order of the client starting from 1 and can't be changed), `name` should be a string that can't be changed and `balance` should be 0.
+12.Create a `bankClient` class with three variable properties: `id`, `name`, and `balance`. The value of `id` should be an automatically (the id should repesents the order of the client starting from 1 and can't be changed), `name` should be a string that can't be changed and `balance` should be 0.
 
-13.Add two function to `banckClient` called `getBalance` and `addBalance`. The `getBalance` function return the `name`, `addBalance`retun the `balance`.
+13.Add two function to `bankClient` called `getBalance` and `addBalance`. The `getBalance` function return the `name`, `addBalance`retun the `balance`.
 
 14.Create an `deposit` and `withdraw` functions, the `deposit` take a double parameter `amount` and return the new balance after the addition, for the `withdraw` takes a double parameter called `amount` the function check if the amount is less than the balance if so, update the `balance` if not, print "Operation Failed! The amount is greater than your balance".
 

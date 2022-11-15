@@ -6,7 +6,9 @@
 
 #### The exercises below are based on a game where a spaceship avoids obstacles in space. The ship is positioned at the bottom of a coordinate system and can only move left and right while obstacles "fall" from top to bottom. Throughout the exercises, you'll create classes to represent different types of spaceships that can be used in the game.
 
-1.Create a `Spaceship` class with three variable properties: `name`, `health`, and `position`. The default value of name should be an empty string and h:ealth should be 0. position will be represented by an Int where negative numbers place the ship further to the left and positive numbers place the ship further to the right. The default value of position should be 0.
+
+1.Create a `Spaceship` class with three variable properties: `name`, `health`, and `position`. The default value of name should be an empty string and health should be 0. position will be represented by an Int where negative numbers place the ship further to the left and positive numbers place the ship further to the right. The default value of position should be 0.
+
 
 2.Create a constant called `falcon` and assign it to an instance of Spaceship. After initialization, set name to "Falcon."
 
@@ -28,4 +30,7 @@
 8.Create a constructor to initialize the `id`, `name`, and `balance`, then test it in the main function.
 
 
+<<<<<<< HEAD
 >>>>>>> origin/main
+=======
+>>>>>>> 5966aa64f037649b8fe941dc6d3876e95baeee58

@@ -17,6 +17,8 @@
 
 ### Bank App
 
+####The exercises below are based on a banc system where a customer is able to create an account. The account enables customers to check their balance, deposit, and withdraw from their account if they meet the requirements. Throughout the exercises, you'll create classes to represent different types of methods that can be used throw the bank.
+
 5.Create a `bankClient` class with three variable properties: `id`, `name`, and `balance`. The value of `id` should be an automatically generated, `name` should be a string that can't be changed and `balance` should be 0.
 
 6.Add two function to `bankClient` class called `getBalance` and `getName`. The `getBalance` function return the `balance`, `getMame`retun the `name`.

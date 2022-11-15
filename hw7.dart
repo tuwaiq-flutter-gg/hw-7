@@ -26,8 +26,7 @@ main() {
   //7 -->The solution class bankClient
   //8 part2
   bankClient bc = bankClient(id: 65327, name: "Amjad", balance: 86.3);
-  print(bc.automatically_generatedID());
-  print(bc.automatically_generatedID());
+  
 }
 
 class Spaceship {

@@ -24,7 +24,7 @@
 
 ### Bank App
 
-9.Create a `bankClient` class with three variable properties: `id`, `name`, and `balance`. The value of `id` should be an automatically (the id should repesents the order of the client starting from 1 and can't be changed), `name` should be a string that can't be changed and `balance` should be 0.
+9.Create a `bankClient` class with three variable properties: `id`, `name`, and `balance`. The value of `id` should be an automatically generated, `name` should be a string that can't be changed and `balance` should be 0.
 
 10.Add two function to `bankClient` class called `getBalance` and `getName`. The `getBalance` function return the `balance`, `getMame`retun the `name`.
 

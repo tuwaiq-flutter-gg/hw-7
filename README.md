@@ -36,6 +36,6 @@
 
 14.Create an `deposit` and `withdraw` functions, the `deposit` take a double parameter `amount` and return the new balance after the addition, for the `withdraw` takes a double parameter called `amount` the function check if the amount is less than the balance if so, update the `balance` if not, print "Operation Failed! The amount is greater than your balance".
 
-15.Create a constructor that uses an Insilaize list to initialize the name and a small test program.
+15.Create a constructor to initialize the `id`, `name`, and `balance`, then test it in the main function.
 
 

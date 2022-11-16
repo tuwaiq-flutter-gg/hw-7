@@ -55,4 +55,22 @@ import 'dart:math';
    int? id = Random().nextInt(1000);
    String? name = "";
    double? balance = 0;
+  
+  bankClient({required this.name}){
+
+}
+  getBalance(){
+
+  return this.balance;
+}
+
+getName(){
+
+  return this.name;
+}
+
+deposit({double? add}){
+this.balance=this.balance!+add!;
+return getBalance();
+}
 }

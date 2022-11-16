@@ -1,0 +1,108 @@
+void main() {
+  
+Spaceship falcon= Spaceship(name: "falcon");
+
+falcon.moveLeft(num: 2);
+falcon.moveRight(num: 1);
+print(falcon.position);
+print("health at ${falcon.health}");
+print("was hit");
+falcon.wasHit();
+
+
+
+
+  bankClient bc = bankClient(id: 65327, name: "Nawaf", balance: 1.34);
+  print(bc.automatically_generatedID());
+  print(bc.automatically_generatedID());
+}
+
+
+
+//1.Create a `Spaceship` class with three variable properties:
+// `name`, `health`, and `position`. The default value of
+// name should be an empty string and health should be 0.
+// position will be represented by an Int where negative 
+//numbers place the ship further to the left and positive
+// numbers place the ship further to the right. The default 
+//value of position should be 0.
+
+class Spaceship {
+  String? name="";
+  int? health=0;
+  int? position=0;
+   
+   
+   Spaceship({this.name });
+
+  moveRight({int? num}){
+
+    this.position=this.position!+num!;
+
+  }
+
+ moveLeft({int? num}){
+    this.position=(this.position!-num!);
+
+  }
+
+wasHit(){
+
+
+  health=health!-5;
+
+  if(health!<=0){
+
+    print("Sorry, your ship was hit one too many times. Do you want to play again?");
+
+    }
+
+}
+
+
+}
+//5.Create a `bankClient` class with three variable properties: `id`, `name`, and `balance`. 
+//The value of `id` should be an automatically generated, `name` should be a string that can't 
+//be changed and `balance` should be 0.
+
+class bankClient {
+  
+  var id;
+  String? name;
+  double balance = 0;
+
+  int client = 1;
+  automatically_generatedID() {
+    return id = client++;
+  }
+
+
+
+  getBalance() {
+    return print("your balance = $balance");
+  }
+
+  getName() {
+    return print("your balance = $name");
+  }
+
+  deposit({double? amount}) {
+    var NewBalance = amount! + balance;
+    return print("your new balance = $NewBalance");
+  }
+
+  withdraw({double? amount}) {
+    if (amount! < balance) {
+      var Upbalance = balance - amount;
+      print("Your current account $Upbalance");
+    } else {
+      print("Operation Failed! The amount is greater than your balance");
+    }
+  }
+
+  bankClient({var id, String? name, double? balance}) {
+ this.id = id;
+    this.name = name;
+    this.balance = balance!;
+  }
+}
